@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <div class="logo">
+    <img src="./img/logo.png" alt="Кот белый">
+  </div>
+  <div class="auth" style="display: none;">
+    <form class="auth__form" autocomplete="off" novalidate>
+      <div class="auth__form-lbl">
+        <input class="auth__form-inp" autocomplete="off" type="text" required>
+        <label class="auth__form-lbl-plchr">Электронная почта или логин</label>
+      </div>
+      <div class="auth__form-lbl">
+        <input class="inp-pass auth__form-inp" autocomplete="off" type="password" required>
+        <span class="auth__form-lbl-plchr">Пароль</span>
+        <button type="button" class="auth__form-btn-icon" title="Показать пароль">
+          <img class="icon icon-show" src="img/pswd.svg" alt="" width="30" height="30">
+          <img class="icon icon-hid" src="img/pswd-hid.svg" alt="" style="display: none;" width="30" height="30">
+        </button>
+      </div>
+      <div class="auth__form-lbl bottom">
+        <div>
+          <input id="check" type="checkbox">
+          <label for="check" class="check-lbl">Запомнить меня</label>
+        </div>
+        <div>
+          <a href="" class="link__pass">Восстановить пароль</a>
+        </div>
+      </div>
+      <!-- <input type="checkbox" name="" id="">Запомнить меня -->
+      
+      <button class="auth__form-btn" type="submit">Войти в систему</button>
+    </form>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
